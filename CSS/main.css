@@ -14,15 +14,15 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 h1{
-    font-size: larger;
+    font-size: 36pt;
 }
 
 h3{
-    font-size: large;
+    font-size: 28pt;
 }
 
 p{
-    font-size: small;
+    font-size: 12pt;
 }
 
 
@@ -36,4 +36,86 @@ footer{
     background-color: darkgray;
     
     border-radius: 10px;
+}
+
+nav li{
+    border: 2px, solid, red;
+    background-color: white;
+    list-style-type: none;
+}
+
+nav li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover{
+    background-color: black;
+}
+
+.active{
+    background-color: red;
+}
+
+table{
+    font-family: Calibri;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    border: 2px, solid, #f0f0f0;
+}
+
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+    
+}
+
+table tr:hover{
+    background-color: lightblue;
+}
+
+table th{
+    background-color: black;
+    color: white;
+}
+
+header{
+    padding: 10px;
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+#mainHeader{
+    display: inline;
+
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    border: 2px, solid, lightblue;
+    background-color: blue;
+    list-style-type: none;
+    float: left;
+    width: 14.46%;
+    padding: 16px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+navli:hover{
+    background-color: black;
 }
