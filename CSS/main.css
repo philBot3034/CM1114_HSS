@@ -108,7 +108,7 @@ nav li{
     background-color: blue;
     list-style-type: none;
     float: left;
-    width: 14.46%;
+    width: 14.28%;
     padding: 16px;
 }
 nav li a{
@@ -118,4 +118,48 @@ nav li a{
 
 navli:hover{
     background-color: black;
+}
+
+header{
+    margin: 10px;
+}
+
+aside{
+    margin: 10px;
+}
+
+main{
+    margin: 10px;
+}
+
+footer{
+    margin: 10px;
+}
+
+nav{
+    margin: 10px;
+}
+
+.gallery-img{
+    width: 100%;
+}
+
+#img-gallery{
+    padding-top: 10px;
+}
+
+#img-gallery .row{
+    margin-bottom: 10px;
+}
+
+#container{
+    width: 10%;
+}
+
+#thirdCaption p {
+    color: white;
+}
+
+#thirdCaption h5 {
+    color: white;
 }
