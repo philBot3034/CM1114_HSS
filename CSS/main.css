@@ -4,8 +4,21 @@ body{
 
 header{
     background-color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+#mainHeader{
+    display: inline;
+
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -29,24 +42,50 @@ p{
 
 main{
     background-color: white;
+    padding: 10px;
     border-radius: 10px;
+    margin: 10px;
+    
 }
 
+aside{
+    background-color: rgb(255, 70, 70);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#ANOUNCMENT{
+    height: 90px;
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+/* changes the color and makes the boarder for the footer */
 footer{
     background-color: darkgray;
-    
+    padding: 10px;
     border-radius: 10px;
+    margin: 10px;
 }
 
+/* makes the nav bar horizontal, fit the screen and change color when mouse hovers */
+nav{
+    margin: 10px;
+}
 nav li{
     border: 2px, solid, red;
     background-color: white;
     list-style-type: none;
+    float: left;
+    width: 14.28%;
+    padding: 16px;
+    
 }
 
 nav li a{
     color: white;
-    text-align: center;
     text-decoration: none;
 }
 
@@ -57,89 +96,53 @@ nav li:hover{
 .active{
     background-color: red;
 }
-
-table{
-    font-family: Calibri;
-    border-collapse: collapse;
-}
-
-table td, table th{
-    border: 2px, solid, #f0f0f0;
-}
-
-table tr:nth-child(even){
-    background-color: #f2f2f2;
-    
-}
-
-table tr:hover{
-    background-color: lightblue;
-}
-
-table th{
-    background-color: black;
-    color: white;
-}
-
-header{
-    padding: 10px;
-}
-
-#logo{
-    height: 50px;
-    width: 50px;
-    float: left;
-    margin-right: 10px;
-}
-
-#mainHeader{
-    display: inline;
-
-}
-
 nav ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-nav li{
-    border: 2px, solid, lightblue;
-    background-color: blue;
-    list-style-type: none;
-    float: left;
-    width: 14.28%;
-    padding: 16px;
-}
-nav li a{
-    color: white;
-    text-decoration: none;
+/* provides style for the table on the event calender page */
+table{
+    font-family: Calibri;
+    text-size-adjust: 10pt;
+    border-collapse: collapse;
 }
 
-navli:hover{
+td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 14.2857%
+}
+
+tr, th{
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+    
+}
+
+td:hover{
+    background-color: lightblue;
+}
+
+th{
     background-color: black;
+    color: white;
+    
 }
 
-header{
-    margin: 10px;
-}
 
-aside{
-    margin: 10px;
-}
 
-main{
-    margin: 10px;
-}
 
-footer{
-    margin: 10px;
-}
 
-nav{
-    margin: 10px;
-}
 
+/* this makes the image galary into a grid that looks nice */
 .gallery-img{
     width: 100%;
 }
@@ -156,10 +159,47 @@ nav{
     width: 10%;
 }
 
+/* this makes the text on the third carasell slide white */
 #thirdCaption p {
     color: white;
 }
 
 #thirdCaption h5 {
     color: white;
+}
+
+/* this makes the columns in the contact us page happen and alows for them to be unequal */
+* {
+    box-sizing: border-box;
+}
+
+.Contact-row {
+    display: flex;
+    padding: 10px;
+}
+
+.Contact-column-Left {
+    width: 60%;
+    padding: 10px;
+}
+.Contact-column-Right {
+    width: 40%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* this makes the boarder around the form and changes the background within that boarder */
+fieldset {
+    border: 1px solid black;
+    background-color: lightgray;
+    padding: 10px;
+  }
+  
+input {
+    margin: 5px;
 }
