@@ -28,39 +28,49 @@
         
 
         <main>
-            <div>
+            <div class="Contact-row">
+                <div class="Contact-column-Left">
                 <!-- contact form that alows the user to provide their name, email, rank, text explaining reason for contact, atachment of file and a button to submit with JS to proivide a confirmation message-->
+                <h3>Contact Us using this form.</h3>    
                 <form>
-                    <fieldset>
-                        <legend>Contact Us using this form. We will endeavor to get back to you as soon as possible.</legend>
+                        <fieldset>
+                            <legend><p>We will endeavor to get back to you as soon as possible.</p></legend>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" value="" /> <br/>
+                            <label for="emailAddress">Enter your Email Address:</label>
+                            <input type="email" id="emailAddress" name="emailAddress" placeholder="email@example.com" /> <br/>
+                            <label for="rank">Rank:</label><br>
+                            <input type="radio" id="rank1" name="rank" value="Recruit">
+                            <label for="rank1">1. Recruit</label><br>
+                            <input type="radio" id="rank2" name="rank" value="Trainee">
+                            <label for="rank2">2. Trainee</label><br>
+                            <input type="radio" id="rank3" name="rank" value="Tech">
+                            <label for="rank3">3. Tech</label><br>
+                            <input type="radio" id="rank4" name="rank" value="Engineer">
+                            <label for="rank4">4. Engineer</label><br>
+                            <input type="radio" id="rank5" name="rank" value="Astronaut">
+                            <label for="rank5">5. Astronaut</label><br>
+                            <input type="radio" id="rank6" name="rank" value="Management">
+                            <label for="rank6">6. Management</label><br>
+                            <input type="radio" id="nonMember" name="rank" value="Non Member">
+                            <label for="nonMember">Non Member</label><br>
+                            <label for="reasonForContact">Reason for Contact:</label>
+                            <input type="text" id="reasonForContact" name="reasonForContact" value="" /> <br/>
+                            <label for="fileAttachment">Select a file:</label>
+                            <input type="file" id="fileAttachment" name="fileAttachment"/> <br/>
+                            <label for="submit">Submit this form:</label>
+                            <button type="button" value="Submit" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
+                        </fieldset>
+                    </form>               
+                </div>
+                <div class="Contact-column-Right">
+                    <p>This is a nice image to look at while you fill in the form</p>
+                    <img src="images/sky_lab_launch.png" alt="nasa skylab launch image" class="gallery-img"/>
+                </div>
                 
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" value="" /> <br/>
-                        <label for="emailAddress">Enter your Email Address:</label>
-                        <input type="email" id="emailAddress" name="emailAddress" placeholder="email@example.com" /> <br/>
-                        <label for="rank">Rank:</label><br>
-                        <input type="radio" id="rank1" name="rank" value="Recruit">
-                        <label for="rank1">1. Recruit</label><br>
-                        <input type="radio" id="rank2" name="rank" value="Trainee">
-                        <label for="rank2">2. Trainee</label><br>
-                        <input type="radio" id="rank3" name="rank" value="Tech">
-                        <label for="rank3">3. Tech</label><br>
-                        <input type="radio" id="rank4" name="rank" value="Engineer">
-                        <label for="rank4">4. Engineer</label><br>
-                        <input type="radio" id="rank5" name="rank" value="Astronaut">
-                        <label for="rank5">5. Astronaut</label><br>
-                        <input type="radio" id="rank6" name="rank" value="Management">
-                        <label for="rank6">6. Management</label><br>
-                        <input type="radio" id="nonMember" name="rank" value="Non Member">
-                        <label for="nonMember">Non Member</label><br>
-                        <label for="reasonForContact">Reason for Contact:</label>
-                        <input type="text" id="reasonForContact" name="reasonForContact" value="" /> <br/>
-                        <label for="fileAttachment">Select a file:</label>
-                        <input type="file" id="fileAttachment" name="fileAttachment"/> <br/>
-                        <label for="submit">Submit this form:</label>
-                        <button type="button" value="Submit" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
-                    </fieldset>
-                </form>               
+            </div>
+            <div>
+                
             </div>
             <div id="form_outcome">
                 <p></p>
