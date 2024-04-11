@@ -1,3 +1,4 @@
+/* general styleing */
 body{
     background-color: lightblue;
 }
@@ -7,18 +8,6 @@ header{
     border-radius: 10px;
     margin: 10px;
     padding: 15px;
-}
-
-#logo{
-    height: 50px;
-    width: 50px;
-    float: left;
-    margin-right: 10px;
-}
-
-#mainHeader{
-    display: inline;
-
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -38,8 +27,6 @@ p{
     font-size: 12pt;
 }
 
-
-
 main{
     background-color: white;
     padding: 10px;
@@ -55,12 +42,29 @@ aside{
     margin: 10px;
 }
 
+
+/* makes the logo fit and be in the right place along with the header */
+#logo{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+#mainHeader{
+    display: inline;
+
+}
+
+
+/* makes the anouncment image behave */
 #ANOUNCMENT{
     height: 90px;
     width: 150px;
     float: left;
     margin-right: 10px;
 }
+
 
 /* changes the color and makes the boarder for the footer */
 footer{
@@ -69,6 +73,7 @@ footer{
     border-radius: 10px;
     margin: 10px;
 }
+
 
 /* makes the nav bar horizontal, fit the screen and change color when mouse hovers */
 nav{
@@ -101,6 +106,7 @@ nav ul{
     padding: 0;
     overflow: hidden;
 }
+
 
 /* provides style for the table on the event calender page */
 table{
@@ -138,10 +144,6 @@ th{
 }
 
 
-
-
-
-
 /* this makes the image galary into a grid that looks nice */
 .gallery-img{
     width: 100%;
@@ -159,6 +161,7 @@ th{
     width: 10%;
 }
 
+
 /* this makes the text on the third carasell slide white */
 #thirdCaption p {
     color: white;
@@ -167,6 +170,7 @@ th{
 #thirdCaption h5 {
     color: white;
 }
+
 
 /* this makes the columns in the contact us page happen and alows for them to be unequal */
 * {
@@ -193,6 +197,7 @@ th{
     clear: both;
 }
 
+
 /* this makes the boarder around the form and changes the background within that boarder */
 fieldset {
     border: 1px solid black;
@@ -203,3 +208,25 @@ fieldset {
 input {
     margin: 5px;
 }
+
+
+/* aligns the login form to the right */
+#login{
+    float: right;
+}
+
+
+/* this makes the hall of heros image fit and also ensures that the image will gain a yelow 'halo' when the mouse is over it */
+#Hero{
+    width: 100%;
+    height: 90%;
+}
+
+#Hero:hover{
+    border: solid yellow 5px;
+}
+
+iframe{
+    width: 100%;
+}
+
