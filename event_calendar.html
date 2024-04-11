@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
     <head>
+        <meta charset="utf-8">
         <!-- title and links to bootstrap and css -->
         <title>RGU Humaan Spaceflight Society</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -85,7 +88,39 @@
             </div>
         </main>
 
-        <aside> </aside>
+        <aside>
+            <!-- form to sugest an event -->
+            <h3>Sugest an event using this form.</h3>    
+                <form id="EventSugest">
+                        <fieldset>
+                            <legend>We will endeavor to get back to you as soon as possible.</legend>
+                            <label for="EventName">Event name:</label>
+                            <input type="text" id="EventName" name="EventName" value="" /> <br/>
+                            <label for="EventDate">Event date:</label>
+                            <input type="date" id="EventDate" name="EventDate" /> <br/>
+                            <label>Submit your event:</label>
+                            <button type="button" value="Submit" onclick="submit_event()">Submit</button>
+                        </fieldset>
+                    </form> 
+                                  
+        </aside>
+        <!-- this checks that the event has a name and a title -->
+        <script>
+            function submit_event() {
+                var title = document.forms["EventSugest"]["EventName"].value;
+                var date = document.forms["EventSugest"]["EventDate"].value;
+                if (title == "") {
+                    alert("An event must have a title!");
+                }
+                else {
+                    if (date.length == 0) {
+                        alert("An event must have a date!");
+                    }else {
+                        alert("Event submitted! The society will contact you soon!");
+                    }
+                }
+            }
+            </script>
 
         <footer>
             <!-- copyright message -->
